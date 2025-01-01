@@ -1,6 +1,10 @@
 mise.toml
 README.md
 
+compose.yml
+Dockerfile
+Dockerfile.dockerignore
+
 .vscode/
 
 .venv/

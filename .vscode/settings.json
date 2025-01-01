@@ -1,0 +1,34 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.analysis.typeCheckingMode": "standard",
+    "python.terminal.activateEnvironment": false,
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "flake8.importStrategy": "fromEnvironment",
+    "flake8.interpreter": [
+        "${workspaceFolder}/.venv/bin/python"
+    ],
+    "flake8.args": [
+        "--config=${workspaceFolder}/.flake8"
+    ],
+    "black-formatter.importStrategy": "fromEnvironment",
+    "black-formatter.interpreter": [
+        "${workspaceFolder}/.venv/bin/python"
+    ],
+    "black-formatter.args": [
+        "--config=${workspaceFolder}/pyproject.toml"
+    ],
+    "isort.importStrategy": "fromEnvironment",
+    "isort.interpreter": [
+        "${workspaceFolder}/.venv/bin/python"
+    ],
+    "isort.args": [
+        "--settings-file=${workspaceFolder}/pyproject.toml"
+    ]
+}
